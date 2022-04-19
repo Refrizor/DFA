@@ -1,0 +1,46 @@
+//        srModTeam = scoreboard.registerNewTeam("2-SrMod");
+//        srModTeam.setColor(ChatColor.AQUA);
+//        srModTeam.setPrefix(Prefixes.SRMOD.getTag() + " ");
+//
+//        modTeam = scoreboard.registerNewTeam("2-Mod");
+//        modTeam.setColor(ChatColor.AQUA);
+//        modTeam.setPrefix(Prefixes.MOD.getTag() + " ");
+//
+//        jrModTeam = scoreboard.registerNewTeam("2-JrMod");
+//        jrModTeam.setColor(ChatColor.AQUA);
+//        jrModTeam.setPrefix(Prefixes.JRMOD.getTag() + " ");
+//
+//        expertTeam = scoreboard.registerNewTeam("3-Expert");
+//        expertTeam.setColor(ChatColor.AQUA);
+//        expertTeam.setPrefix(Prefixes.EXPERT.getTag() + " ");
+//
+//        helperTeam = scoreboard.registerNewTeam("3-Helper");
+//        helperTeam.setColor(ChatColor.AQUA);
+//        helperTeam.setPrefix(Prefixes.HELPER.getTag() + " ");
+//
+//        jrHelperTeam = scoreboard.registerNewTeam("3-JrHelper");
+//        jrHelperTeam.setColor(ChatColor.AQUA);
+//        jrHelperTeam.setPrefix(Prefixes.JRHELPER.getTag() + " ");
+//
+//        youtuberTeam = scoreboard.registerNewTeam("3-YouTuber");
+//        youtuberTeam.setColor(ChatColor.WHITE);
+//        youtuberTeam.setPrefix(Prefixes.YOUTUBER.getShortTag() + " ");
+//
+//        overlordTeam = scoreboard.registerNewTeam("4-Overlord");
+//        overlordTeam.setColor(ChatColor.WHITE);
+//        overlordTeam.setPrefix(Prefixes.OVERLORD.getShortTag() + " ");
+//
+//        mythicTeam = scoreboard.registerNewTeam("5-Mythic");
+//        mythicTeam.setColor(ChatColor.WHITE);
+//        mythicTeam.setPrefix(Prefixes.MYTHIC.getShortTag() + " ");
+//
+//        emperorTeam = scoreboard.registerNewTeam("6-Emperor");
+//        emperorTeam.setColor(ChatColor.WHITE);
+//        emperorTeam.setPrefix(Prefixes.EMPEROR.getShortTag() + " ");
+//
+//        nobleTeam = scoreboard.registerNewTeam("7-Noble");
+//        nobleTeam.setColor(ChatColor.WHITE);
+//        nobleTeam.setPrefix(Prefixes.NOBLE.getShortTag() + " ");
+//
+//        noneTeam = scoreboard.registerNewTeam("9-None");
+//        noneTeam.setColor(ChatColor.WHITE);

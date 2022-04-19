@@ -1,0 +1,10 @@
+{
+  "structures": {
+    "structures": {} },
+  "layers": [
+    {"block": "stone", "height": 45},
+    {"block": "dirt", "height": 4},
+    {"block": "grass_block", "height": 1}
+  ],
+  "biome":"plains"
+}
