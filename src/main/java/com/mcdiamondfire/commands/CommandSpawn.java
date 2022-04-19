@@ -16,10 +16,10 @@ public class CommandSpawn implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player player = (Player) sender;
 
-        List<Integer> list = new ArrayList<>();
-        list.add(DiamondFire.getInstance().getConfig().getIntegerList("spawn_location").get(0));
-        list.add(DiamondFire.getInstance().getConfig().getIntegerList("spawn_location").get(1));
-        list.add(DiamondFire.getInstance().getConfig().getIntegerList("spawn_location").get(2));
+        List<Float> list = new ArrayList<>();
+        list.add(DiamondFire.getInstance().getConfig().getFloatList("spawn_location").get(0));
+        list.add(DiamondFire.getInstance().getConfig().getFloatList("spawn_location").get(1));
+        list.add(DiamondFire.getInstance().getConfig().getFloatList("spawn_location").get(2));
 
         player.teleport(new Location(Bukkit.getWorld("lobby"), list.get(0), list.get(1), list.get(2)));
         return true;

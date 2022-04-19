@@ -27,7 +27,7 @@ public class DiamondFire extends JavaPlugin {
         config.addDefault("database_password", "Placeholder");
         config.addDefault("motd", "Placeholder");
         config.addDefault("login_message", "Placeholder");
-        config.addDefault("spawn_location",  new ArrayList<Integer>());
+        config.addDefault("spawn_location",  new ArrayList<Float>());
         config.addDefault("bow_limits", 5);
 
         config.options().copyDefaults(true);
