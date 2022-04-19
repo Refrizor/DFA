@@ -5,6 +5,7 @@ import com.mcdiamondfire.events.*;
 import com.mcdiamondfire.lobby.LobbyEvents;
 import com.mcdiamondfire.lobby.menu.GameMenu;
 import com.mcdiamondfire.rank.Tab;
+import com.mcdiamondfire.server.Sidebar;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.scoreboard.Team;
@@ -17,6 +18,7 @@ public class Initializer {
         //static Scoreboard scoreboard = DiamondFire.getInstance().getScoreboard();
 
         Tab.initTeams();
+        Sidebar.init();
 
         pm.registerEvents(new JoinEvent(), DiamondFire.getInstance());
         pm.registerEvents(new QuitEvent(), DiamondFire.getInstance());
@@ -44,5 +46,7 @@ public class Initializer {
         Tab.emperorTeam.unregister();
         Tab.nobleTeam.unregister();
         Tab.noneTeam.unregister();
+
+        Sidebar.unload();
     }
 }

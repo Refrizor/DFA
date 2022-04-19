@@ -32,12 +32,14 @@ public class QuitEvent implements Listener {
 
         event.setQuitMessage(PlayerData.getPrimaryRank(player, true) + ChatColor.GRAY + player.getName() + " left.");
 
-
         Rank.getDonorID().remove(player.getUniqueId());
         Rank.getSupportID().remove(player.getUniqueId());
         Rank.getModerationID().remove(player.getUniqueId());
         Rank.getAdminID().remove(player.getUniqueId());
         Rank.getYoutuberID().remove(player.getUniqueId());
         Rank.getEventID().remove(player.getUniqueId());
+
+        player.setScoreboard(Bukkit.getScoreboardManager().getNewScoreboard());
+
     }
 }
