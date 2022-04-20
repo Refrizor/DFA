@@ -12,7 +12,12 @@ We stay true to organization and naming conventions. In the repo/source files, y
 The base requirements to run our system:
 - Preferably the <a href="https://www.jetbrains.com/idea/">IntellJ Idea</a> IDE. If you use another IDE, that is okay, but be mindful about commits - do not commit your IDE's files to our repo!
 - <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html?msclkid=7537580dc06611ecbbbf36e60c7ef60d">JDK 17</a>
-- Maven. IntelliJ provides this
-- Git. IntelliJ integrates this; it is recommended to use IntellJ's git integration
-- MySQL. Consider using xaamp if you run on Windows. If you want to run it on a Linux distribution, set it up however you'd like. We will provide you the SQL dump file to import
+- <a href="https://maven.apache.org/">Maven</a>. IntelliJ provides this
+- <a href="https://git-scm.com/">Git</a>. IntelliJ integrates this; it is recommended to use IntellJ's git integration
+- <a href="https://dev.mysql.com/downloads/">MySQL</a>. Consider using xaamp if you run on Windows. If you want to run it on a Linux distribution, set it up however you'd like. We will provide you the SQL dump file to import
+- - On Linux? Use `sudo apt install mysql-server`
 - <a href="https://mvnrepository.com/artifact/mysql/mysql-connector-java">mysql-connector-java</a>
+
+## Optional
+- <a href="https://www.phpmyadmin.net/">phpMyAdmin</a>.
+- - On Linux? `sudo apt-get install phpmyadmin`
