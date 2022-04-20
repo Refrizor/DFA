@@ -37,7 +37,7 @@ public class Initializer {
         Tab.srModTeam.unregister();
         Tab.modTeam.unregister();
         Tab.jrModTeam.unregister();
-        Tab.expertTeam.unregister();
+        Tab.srHelperTeam.unregister();
         Tab.helperTeam.unregister();
         Tab.jrHelperTeam.unregister();
         Tab.youtuberTeam.unregister();

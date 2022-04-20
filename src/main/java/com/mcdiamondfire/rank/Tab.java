@@ -22,7 +22,7 @@ public class Tab {
     public static Team srModTeam = scoreboard.registerNewTeam("3-SrMod");
     public static Team modTeam = scoreboard.registerNewTeam("4-Mod");
     public static Team jrModTeam = scoreboard.registerNewTeam("5-JrMod");
-    public static Team expertTeam = scoreboard.registerNewTeam("6-SrHelper");
+    public static Team srHelperTeam = scoreboard.registerNewTeam("6-SrHelper");
     public static Team helperTeam = scoreboard.registerNewTeam("7-Helper");
     public static Team jrHelperTeam = scoreboard.registerNewTeam("8-JrHelper");
     public static Team youtuberTeam = scoreboard.registerNewTeam("9-YouTuber");
@@ -38,7 +38,7 @@ public class Tab {
         srModTeam.removeEntry(player.getName());
         modTeam.removeEntry(player.getName());
         jrModTeam.removeEntry(player.getName());
-        expertTeam.removeEntry(player.getName());
+        srHelperTeam.removeEntry(player.getName());
         helperTeam.removeEntry(player.getName());
         jrHelperTeam.removeEntry(player.getName());
         youtuberTeam.removeEntry(player.getName());
@@ -51,7 +51,7 @@ public class Tab {
 
     public static void initTeams() {
 
-        Team[] staffTeam = {jrHelperTeam, helperTeam, expertTeam, jrModTeam, modTeam, srModTeam, devTeam, adminTeam, ownerTeam};
+        Team[] staffTeam = {jrHelperTeam, helperTeam, srHelperTeam, jrModTeam, modTeam, srModTeam, devTeam, adminTeam, ownerTeam};
         Team[] regularTeam = {noneTeam, youtuberTeam, nobleTeam, emperorTeam, mythicTeam, overlordTeam};
 
         for(Team team : staffTeam){
@@ -67,7 +67,7 @@ public class Tab {
         srModTeam.setPrefix(Prefixes.SRMOD.getTag() + " ");
         modTeam.setPrefix(Prefixes.MOD.getTag() + " ");
         jrModTeam.setPrefix(Prefixes.JRMOD.getTag() + " ");
-        expertTeam.setPrefix(Prefixes.SRHELPER.getTag() + " ");
+        srHelperTeam.setPrefix(Prefixes.SRHELPER.getTag() + " ");
         helperTeam.setPrefix(Prefixes.HELPER.getTag() + " ");
         jrHelperTeam.setPrefix(Prefixes.JRHELPER.getTag() + " ");
         youtuberTeam.setPrefix(Prefixes.YOUTUBER.getShortTag() + " ");
@@ -123,7 +123,7 @@ public class Tab {
             case 3:
                 if (admin == 0) {
                     if (moderation == 0) {
-                        expertTeam.addEntry(player.getName());
+                        srHelperTeam.addEntry(player.getName());
                     }
                 }
 
