@@ -23,13 +23,15 @@ public class RankReceiver {
         try {
             Connection connection = DatabaseHandler.getConnection();
 
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT donor,support,moderation,administration,youtuber FROM `ranks` WHERE `uuid` = '" + player.getUniqueId() + "'");
+            PreparedStatement ranks = connection.prepareStatement("SELECT donor,support,moderation,administration,youtuber FROM `ranks` WHERE `uuid` = '" + player.getUniqueId() + "'");
             PreparedStatement badges = connection.prepareStatement("SELECT badge FROM `badges` WHERE `uuid` = '" + player.getUniqueId() + "'");
-            ResultSet checkRanks = preparedStatement.executeQuery();
+            PreparedStatement username = connection.prepareStatement("SELECT `username` FROM `players` WHERE `uuid` = '" + player.getUniqueId() + "'");
+            ResultSet checkRanks = ranks.executeQuery();
             ResultSet checkBadges = badges.executeQuery();
+            ResultSet checkUsername = username.executeQuery();
 
             if (checkRanks.next()) {
-                ResultSet resultSet = preparedStatement.executeQuery();
+                ResultSet resultSet = ranks.executeQuery();
 
                 while (resultSet.next()) {
                     donor = resultSet.getInt(1);
@@ -39,11 +41,21 @@ public class RankReceiver {
                     youtuber = resultSet.getInt(5);
                 }
 
+                if(checkUsername.next()){
+                    String usernameString = checkUsername.getString(1);
+                    if(!(player.getName().equalsIgnoreCase(usernameString))){
+                        PreparedStatement changeName = connection.prepareStatement("UPDATE `players` SET `username` = '" + player.getName() + "' WHERE `uuid` = '" + player.getUniqueId() + "'");
+                        changeName.execute();
+                    }
+                }
+
             } else {
-                PreparedStatement insert = connection.prepareStatement("INSERT INTO `ranks`(`uuid`, `donor`, `support`, `moderation`, `administration`, `retirement`, `youtuber`, `builder`) VALUES ('" + player.getUniqueId() + "', 0, 0, 0, 0, 0, 0, 0)");
-                PreparedStatement insert1 = connection.prepareStatement("INSERT INTO `badges`(`uuid`, `badge`) VALUES ('" + player.getUniqueId() + "', 0)");
-                insert.execute();
-                insert1.execute();
+                PreparedStatement insertRanks = connection.prepareStatement("INSERT INTO `ranks`(`uuid`, `donor`, `support`, `moderation`, `administration`, `retirement`, `youtuber`, `builder`) VALUES ('" + player.getUniqueId() + "', 0, 0, 0, 0, 0, 0, 0)");
+                PreparedStatement insertBadges = connection.prepareStatement("INSERT INTO `badges`(`uuid`, `badge`) VALUES ('" + player.getUniqueId() + "', 0)");
+                PreparedStatement insertPlayers = connection.prepareStatement("INSERT INTO `players`(`username`, `uuid`) VALUES ('" + player.getName() + "', '" + player.getUniqueId() + "')");
+                insertRanks.execute();
+                insertBadges.execute();
+                insertPlayers.execute();
 
                 donor = 0;
                 support = 0;

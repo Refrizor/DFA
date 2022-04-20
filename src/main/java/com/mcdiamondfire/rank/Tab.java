@@ -51,17 +51,30 @@ public class Tab {
 
     public static void initTeams() {
 
-        Team[] staffTeam = {jrHelperTeam, helperTeam, expertTeam, jrModTeam, modTeam, devTeam, adminTeam, ownerTeam};
-        Team[] donorTeam = {noneTeam, youtuberTeam, nobleTeam, emperorTeam, mythicTeam, overlordTeam};
+        Team[] staffTeam = {jrHelperTeam, helperTeam, expertTeam, jrModTeam, modTeam, srModTeam, devTeam, adminTeam, ownerTeam};
+        Team[] regularTeam = {noneTeam, youtuberTeam, nobleTeam, emperorTeam, mythicTeam, overlordTeam};
 
         for(Team team : staffTeam){
             team.setColor(ChatColor.AQUA);
         }
-        for(Team team : donorTeam){
+        for(Team team : regularTeam){
             team.setColor(ChatColor.WHITE);
         }
 
+        ownerTeam.setPrefix(Prefixes.OWNER.getTag() + " ");
         adminTeam.setPrefix(Prefixes.ADMIN.getTag() + " ");
+        devTeam.setPrefix(Prefixes.DEV.getTag() + " ");
+        srModTeam.setPrefix(Prefixes.SRMOD.getTag() + " ");
+        modTeam.setPrefix(Prefixes.MOD.getTag() + " ");
+        jrModTeam.setPrefix(Prefixes.JRMOD.getTag() + " ");
+        expertTeam.setPrefix(Prefixes.SRHELPER.getTag() + " ");
+        helperTeam.setPrefix(Prefixes.HELPER.getTag() + " ");
+        jrHelperTeam.setPrefix(Prefixes.JRHELPER.getTag() + " ");
+        youtuberTeam.setPrefix(Prefixes.YOUTUBER.getShortTag() + " ");
+        overlordTeam.setPrefix(Prefixes.OVERLORD.getShortTag() + " ");
+        mythicTeam.setPrefix(Prefixes.MYTHIC.getShortTag() + " ");
+        emperorTeam.setPrefix(Prefixes.EMPEROR.getShortTag() + " ");
+        nobleTeam.setPrefix(Prefixes.NOBLE.getShortTag() + " ");
     }
 
     public static void update(Player player) {

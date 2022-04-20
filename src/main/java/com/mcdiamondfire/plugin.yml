@@ -38,3 +38,5 @@ commands:
     description: Patch
   spawn:
     description: Spawn command
+  purgedata:
+    description: Purge database tables
