@@ -14,7 +14,7 @@ The base requirements to run our system:
 - <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html?msclkid=7537580dc06611ecbbbf36e60c7ef60d">JDK 17</a>
 - <a href="https://maven.apache.org/">Maven</a>. IntelliJ provides this
 - <a href="https://git-scm.com/">Git</a>. IntelliJ integrates this; it is recommended to use IntellJ's git integration
-- <a href="https://dev.mysql.com/downloads/">MySQL</a>. Consider using xaamp if you run on Windows. If you want to run it on a Linux distribution, set it up however you'd like. We will provide you the SQL dump file to import. On Linux? Use `sudo apt install mysql-server`
+- <a href="https://dev.mysql.com/downloads/">MySQL</a>. Consider using xaamp if you run on Windows. If you want to run it on a Linux distribution, set it up however you'd like. We will provide you the SQL dump file to import. On Linux? `sudo apt install mysql-server`
 - <a href="https://mvnrepository.com/artifact/mysql/mysql-connector-java">mysql-connector-java</a>
 
 ## Optional
