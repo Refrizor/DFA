@@ -52,7 +52,7 @@ public class RankReceiver {
             } else {
                 PreparedStatement insertRanks = connection.prepareStatement("INSERT INTO `ranks`(`uuid`, `donor`, `support`, `moderation`, `administration`, `retirement`, `youtuber`, `builder`) VALUES ('" + player.getUniqueId() + "', 0, 0, 0, 0, 0, 0, 0)");
                 PreparedStatement insertBadges = connection.prepareStatement("INSERT INTO `badges`(`uuid`, `badge`) VALUES ('" + player.getUniqueId() + "', 0)");
-                PreparedStatement insertPlayers = connection.prepareStatement("INSERT INTO `players`(`username`, `uuid`) VALUES ('" + player.getName() + "', '" + player.getUniqueId() + "')");
+                PreparedStatement insertPlayers = connection.prepareStatement("INSERT INTO `players`(`username`, `uuid`, `shards`) VALUES ('" + player.getName() + "', '" + player.getUniqueId() + "', 50)");
                 insertRanks.execute();
                 insertBadges.execute();
                 insertPlayers.execute();
