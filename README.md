@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/45441561/164153001-a89c287f-0595-40d8-ba4d-6e3f72b2a874.png" height="200" width="200">
 
 ### Project is no longer actively maintained by me. Feel free to contribute any changes or fork!
-While this is no actively maintained, small updates may push out in the future if I decide to pick it back up. This could potentially turn into a full-fledged plugin that you can add to any server. Spigot version may be changed to 1.19
+While this is no actively maintained, small updates may push out in the future if I decide to pick it back up. This could potentially turn into a full-fledged plugin that you can add to any server with limited setup configurating. Spigot version may be changed to 1.19
 
 DiamondFire Activities repository. This repository is ~~private~~ public access. Maintained by **Refrizor**
 
