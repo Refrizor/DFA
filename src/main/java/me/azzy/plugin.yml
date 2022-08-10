@@ -1,10 +1,10 @@
-name: DiamondFire
+name: SphereBattles
 version: 1.0
 api-version: 1.19
 author: Refrizor
 database: true
 main: me.azzy.DiamondFire
-description: Inferris SphereBattles test
+description: Inferris SphereBattles
 
 commands:
   checkrank:
