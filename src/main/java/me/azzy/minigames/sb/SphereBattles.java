@@ -67,7 +67,7 @@ public class SphereBattles {
         for(Player all : Bukkit.getOnlinePlayers()){
             if(getQueue().contains(all.getUniqueId())){
                 Teams.addAll(all);
-                getBowLimits().put(all.getUniqueId(), DiamondFire.getFileConfig().getInt("bow_limits"));
+                getBowLimits().put(all.getUniqueId(), DiamondFire.getConfiguration().getInt("bow_limits"));
                 getQueue().clear();
                 all.getInventory().clear();
                 PlayerUtils.bossBar.removePlayer(all);

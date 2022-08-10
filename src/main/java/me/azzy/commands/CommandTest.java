@@ -54,7 +54,7 @@ public class CommandTest implements CommandExecutor {
         }
 
         if(args[0].equalsIgnoreCase("bowlimits")){
-            player.sendMessage("" + DiamondFire.getFileConfig().getInt("bow_limits"));
+            player.sendMessage("" + DiamondFire.getConfiguration().getInt("bow_limits"));
         }
 
         if(args[0].equalsIgnoreCase("size")){

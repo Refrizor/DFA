@@ -9,8 +9,8 @@ public class DatabaseHandler {
 
     static {
         source.setUrl("jdbc:mysql://localhost/mcdiamondfire?useSSL=false&allowPublicKeyRetrieval=true");
-        source.setUser(DiamondFire.getFileConfig().getString("database_user"));
-        source.setPassword(DiamondFire.getFileConfig().getString("database_password"));
+        source.setUser(DiamondFire.getConfiguration().getString("database_user"));
+        source.setPassword(DiamondFire.getConfiguration().getString("database_password"));
     }
 
     public static Connection getConnection() throws SQLException {

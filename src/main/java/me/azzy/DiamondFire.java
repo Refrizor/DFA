@@ -2,16 +2,19 @@ package me.azzy;
 
 import me.azzy.commands.*;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scoreboard.Scoreboard;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class DiamondFire extends JavaPlugin {
 
     private static Scoreboard scoreboard;
-
     private static DiamondFire instance;
+    private static FileConfiguration messagesConfig;
+    private static File file;
 
     public static DiamondFire getInstance() {
         return instance;
@@ -21,15 +24,8 @@ public class DiamondFire extends JavaPlugin {
     public void onEnable(){
         instance = this;
 
-        FileConfiguration config = this.getConfig();
-        config.addDefault("database_user", "Placeholder");
-        config.addDefault("database_password", "Placeholder");
-        config.addDefault("motd", "Placeholder");
-        config.addDefault("login_message", "Placeholder");
-        config.addDefault("spawn_location",  new ArrayList<Float>());
-        config.addDefault("bow_limits", 5);
-
-        config.options().copyDefaults(true);
+        createConfig();
+        getConfig().options().copyDefaults(true);
         saveConfig();
 
         getCommand("checkrank").setExecutor(new CommandCheckrank());
@@ -57,8 +53,30 @@ public class DiamondFire extends JavaPlugin {
         Initializer.unload();
     }
 
-    public static FileConfiguration getFileConfig(){
-        return instance.getConfig();
+    private void createConfig(){
+        file = new File(getDataFolder(), "messages.yml");
+        if(!file.exists()){
+            file.getParentFile().mkdirs();
+            saveResource("messages.yml", false);
+        }
+        messagesConfig = new YamlConfiguration();
+        try{
+            messagesConfig.load(file);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public static FileConfiguration getConfiguration(){
+        return DiamondFire.getInstance().getConfig();
+    }
+
+    public static FileConfiguration getMessagesConfig() {
+        return messagesConfig;
+    }
+
+    public File getFile() {
+        return file;
     }
 
     public static Scoreboard getScoreboard() {

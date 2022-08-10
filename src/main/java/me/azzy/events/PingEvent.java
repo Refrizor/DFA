@@ -10,6 +10,6 @@ public class PingEvent implements Listener {
 
     @EventHandler
     public void onPing(ServerListPingEvent event){
-        event.setMotd(ChatColor.translateAlternateColorCodes('&', DiamondFire.getFileConfig().getString("motd")));
+        event.setMotd(ChatColor.translateAlternateColorCodes('&', DiamondFire.getConfiguration().getString("motd")));
     }
 }
