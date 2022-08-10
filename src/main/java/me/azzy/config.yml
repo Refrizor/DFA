@@ -1,0 +1,10 @@
+# Database
+database-address: localhost
+gateway-port: 8080
+database: "Placeholder"
+database-user: "Placeholder"
+database-password: "Placeholder"
+
+# General
+spawn-location: Location
+bow-limits: 5

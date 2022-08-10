@@ -8,9 +8,13 @@ public class DatabaseHandler {
     private static final MysqlDataSource source = new MysqlDataSource();
 
     static {
-        source.setUrl("jdbc:mysql://localhost/mcdiamondfire?useSSL=false&allowPublicKeyRetrieval=true");
-        source.setUser(DiamondFire.getConfiguration().getString("database_user"));
-        source.setPassword(DiamondFire.getConfiguration().getString("database_password"));
+        String address = DiamondFire.getConfiguration().getString("database-address");
+        String database = DiamondFire.getConfiguration().getString("database");
+        int gateway = DiamondFire.getConfiguration().getInt("gateway-port");
+        source.setUrl("jdbc:mysql://" + address + "/" + database + "?useSSL=false&allowPublicKeyRetrieval=true");
+        source.setPort(gateway);
+        source.setUser(DiamondFire.getConfiguration().getString("database-user"));
+        source.setPassword(DiamondFire.getConfiguration().getString("database-password"));
     }
 
     public static Connection getConnection() throws SQLException {

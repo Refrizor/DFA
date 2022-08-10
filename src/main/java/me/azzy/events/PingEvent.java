@@ -10,6 +10,8 @@ public class PingEvent implements Listener {
 
     @EventHandler
     public void onPing(ServerListPingEvent event){
-        event.setMotd(ChatColor.translateAlternateColorCodes('&', DiamondFire.getConfiguration().getString("motd")));
+        String textToTranslate = DiamondFire.getMessagesConfig().getString("motd");
+        assert textToTranslate != null;
+        event.setMotd(ChatColor.translateAlternateColorCodes('&', textToTranslate));
     }
 }

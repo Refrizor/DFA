@@ -44,6 +44,7 @@ public class DiamondFire extends JavaPlugin {
         getCommand("patch").setExecutor(new CommandPatch());
         getCommand("spawn").setExecutor(new CommandSpawn());
         getCommand("purgedata").setExecutor(new CommandPurgedata());
+        getCommand("config").setExecutor(new CommandConfig());
 
         Initializer.initialize();
     }
