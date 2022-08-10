@@ -3,7 +3,7 @@
 ### Project is no longer actively maintained by me. Feel free to contribute any changes or fork!
 While this is not actively maintained, small updates may push out in the future if I decide to pick it back up. This could potentially turn into a full-fledged plugin that you can add to any server with limited setup configurating.
 
-Additionally, DFA is no longer administration-backed. I left the admin team and I am no longer staffed there, and DiamondFire is working on even cooler at the moment to account for events in the longterm. It is currently undergoing some **rebranding** to mark it as no longer official
+Additionally, DFA is no longer administration-backed. I left the admin team and I am no longer staffed there, and DiamondFire is working on something even cooler at the moment to account for events in the longterm on a higher scale. This project is currently undergoing some **rebranding** to mark it as no longer official, and to lean it more towards as an individual project instead of an org-related project.
 
 DiamondFire Activities repository. This repository is ~~private~~ public access. Maintained by **Refrizor**
 
