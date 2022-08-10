@@ -4,7 +4,7 @@ api-version: 1.19
 author: Refrizor
 database: true
 main: me.azzy.DiamondFire
-description: Inferris SphereBattles
+description: Inferris SphereBattles test
 
 commands:
   checkrank:
