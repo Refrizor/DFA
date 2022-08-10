@@ -1,7 +1,9 @@
 <img src="https://user-images.githubusercontent.com/45441561/164153001-a89c287f-0595-40d8-ba4d-6e3f72b2a874.png" height="200" width="200">
 
 ### Project is no longer actively maintained by me. Feel free to contribute any changes or fork!
-While this is no actively maintained, small updates may push out in the future if I decide to pick it back up. This could potentially turn into a full-fledged plugin that you can add to any server with limited setup configurating. Spigot version may be changed to 1.19
+While this is not actively maintained, small updates may push out in the future if I decide to pick it back up. This could potentially turn into a full-fledged plugin that you can add to any server with limited setup configurating.
+
+Additionally, DFA is no longer administration-backed. I left the admin team and I am no longer staffed there, and DiamondFire is working on something even cooler at the moment to account for events in the longterm on a higher scale. This project is currently undergoing some **rebranding** to mark it as no longer official, and to lean it more towards as an individual project instead of an org-related project.
 
 DiamondFire Activities repository. This repository is ~~private~~ public access. Maintained by **Refrizor**
 
@@ -13,7 +15,7 @@ We stay true to organization and naming conventions. In the repo/source files, y
 
 ## Requirements
 The base requirements to run our system:
-- Spigot API for 1.18.5
+- Spigot API for 1.19
 - Preferably the <a href="https://www.jetbrains.com/idea/">IntellJ Idea</a> IDE. If you use another IDE, that is okay, but be mindful about commits - do not commit your IDE's files to our repo!
 - <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html?msclkid=7537580dc06611ecbbbf36e60c7ef60d">JDK 17</a>
 - <a href="https://maven.apache.org/">Maven</a>. IntelliJ provides this
