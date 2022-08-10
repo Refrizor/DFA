@@ -1,6 +1,9 @@
 <img src="https://user-images.githubusercontent.com/45441561/164153001-a89c287f-0595-40d8-ba4d-6e3f72b2a874.png" height="200" width="200">
 
-DiamondFire Activities repository. This repository is *private* access, be mindful about sharing any information. Maintained by **Refrizor**
+### Project is no longer actively maintained by me. Feel free to contribute any changes or fork!
+While this is no actively maintained, small updates may push out in the future if I decide to pick it back up. This could potentially turn into a full-fledged plugin that you can add to any server with limited setup configurating. Spigot version may be changed to 1.19
+
+DiamondFire Activities repository. This repository is ~~private~~ public access. Maintained by **Refrizor**
 
 
 ## Development
@@ -10,6 +13,7 @@ We stay true to organization and naming conventions. In the repo/source files, y
 
 ## Requirements
 The base requirements to run our system:
+- Spigot API for 1.18.5
 - Preferably the <a href="https://www.jetbrains.com/idea/">IntellJ Idea</a> IDE. If you use another IDE, that is okay, but be mindful about commits - do not commit your IDE's files to our repo!
 - <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html?msclkid=7537580dc06611ecbbbf36e60c7ef60d">JDK 17</a>
 - <a href="https://maven.apache.org/">Maven</a>. IntelliJ provides this
