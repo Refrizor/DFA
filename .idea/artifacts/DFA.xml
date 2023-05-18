@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="DFA">
-    <output-path>$USER_HOME$/Desktop/Server/plugins</output-path>
-    <root id="archive" name="DFA.jar">
-      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/com/mcdiamondfire/plugin.yml" />
-      <element id="module-output" name="DFA" />
-    </root>
-  </artifact>
-</component>
