@@ -4,7 +4,7 @@
 DiamondFire Activities was once a project I was working on, backed by the DF admin team for when I previously was an admin, that would incorporate fun games during events such as a modified form of Sphere Battles.
 Sphere Battles was a mode created by kNoAPP during the early DiamondFire times. It's no longer maintained, and was discontinued after I took a long hiatus for medical reasons, and DiamondFire would eventually create Event Nodes, a much more exciting project at the time that would allow events to run in a large scale environment.
 
-I made the repo public, but beware, the code is awful.
+I made the repo public, but beware, the code is awful. It will never be repurposed into an actual plugin to protect kNoAPP's creative work around SB, because it is no longer affiliated with DF in any way.
 
 ### Features at the time
 - SphereBattles didn't get much work done, and I used a horrible way of loading worlds. Basic teams and spawning was done, along with configuration options, but that was about it
