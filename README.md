@@ -1,27 +1,12 @@
 <img src="https://user-images.githubusercontent.com/45441561/164153001-a89c287f-0595-40d8-ba4d-6e3f72b2a874.png" height="200" width="200">
 
-### Project is no longer actively maintained by me. Feel free to contribute any changes or fork!
-While this is not actively maintained, small updates may push out in the future if I decide to pick it back up. This could potentially turn into a full-fledged plugin that you can add to any server with limited setup configurating.
+### Project is no longer actively maintained
+DiamondFire Activities was once a project I was working on, backed by the DF admin team for when I previously was an admin, that would incorporate fun games during events such as a modified form of Sphere Battles.
+Sphere Battles was a mode created by kNoAPP during the early DiamondFire times. It's no longer maintained, and was discontinued after I took a long hiatus for medical reasons, and DiamondFire would eventually create Event Nodes, a much more exciting project at the time that would allow events to run in a large scale environment.
 
-Additionally, DFA is no longer administration-backed. I left the admin team and I am no longer staffed there, and DiamondFire is working on something even cooler at the moment to account for events in the longterm on a higher scale. This project is currently undergoing some **rebranding** to mark it as no longer official, and to lean it more towards as an individual project instead of an org-related project.
+I made the repo public, but beware, the code is awful.
 
-DiamondFire Activities repository. This repository is ~~private~~ public access. Maintained by **Refrizor**
+### How Sphere Battles would work
+Protect your team's "core" (respawn point), grab the resources, and eliminate the other team.
 
-
-## Development
-The project solely uses Java, with some use cases of JSON for world generation and YAML for configuration. It depends on the latest stable version of Spigot (run BuildTools.jar), and requires the latest version of mysql-connector-java. DFA runs on JDK 17.
-
-We stay true to organization and naming conventions. In the repo/source files, you will notice we use "Command" before labeling any command, and add "Event" after each event class, and we stay as true as possible for naming classes, so follow that type of format and continue the organization efforts for common practice and ease of reading, and ease of interpretation from new developers.
-
-## Requirements
-The base requirements to run our system:
-- Spigot API for 1.19
-- Preferably the <a href="https://www.jetbrains.com/idea/">IntellJ Idea</a> IDE. If you use another IDE, that is okay, but be mindful about commits - do not commit your IDE's files to our repo!
-- <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html?msclkid=7537580dc06611ecbbbf36e60c7ef60d">JDK 17</a>
-- <a href="https://maven.apache.org/">Maven</a>. IntelliJ provides this
-- <a href="https://git-scm.com/">Git</a>. IntelliJ integrates this; it is recommended to use IntellJ's git integration
-- <a href="https://dev.mysql.com/downloads/">MySQL</a>. Consider using xaamp if you run on Windows. If you want to run it on a Linux distribution, set it up however you'd like. We will provide you the SQL dump file to import. On Linux? `sudo apt install mysql-server`
-- <a href="https://mvnrepository.com/artifact/mysql/mysql-connector-java">mysql-connector-java</a>
-
-## Optional
-- <a href="https://www.phpmyadmin.net/">phpMyAdmin</a>. On Linux? `sudo apt-get install phpmyadmin`
+The entire game takes place in a void world with floating sphereical objects that make up a resource, such as wood or iron. The wooden sphere sphere contains chests filled with bows and arrows, making it very useful for combat. Each team has a "core", or respawn point. If your core is broken by an enemy player, it will disable respawns in your team allowing you to be eliminated, making it a number one priority. Craft tools and armor, get prepared, and start using the resources to hide and protect the core. Bridge toward the enemy's side of the map, and try to defeat them! Some high value spheres exist in the middle of the map containing rare materials like diamond, which carry a significant risk as enemies will try to rush for it, but it offers great reward.
