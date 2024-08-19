@@ -6,6 +6,11 @@ Sphere Battles was a mode created by kNoAPP during the early DiamondFire times. 
 
 I made the repo public, but beware, the code is awful.
 
+### Features at the time
+- SphereBattles didn't get much work done, and I used a horrible way of loading worlds. Basic teams and spawning was done, along with configuration options, but that was about it
+- Rank, badge, and permissions system that mirrored DiamondFire's ranks. Badges were to signify who was a DFA staff member or developer. This took the longest
+- Basic lobby stuff
+
 ### How Sphere Battles would work
 Protect your team's "core" (respawn point), grab the resources, and eliminate the other team.
 
